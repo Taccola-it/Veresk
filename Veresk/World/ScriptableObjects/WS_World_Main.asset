@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da81eb7acd273004896b79c376a08730, type: 3}
+  m_Name: WS_World_Main
+  m_EditorClassIdentifier: Assembly-CSharp::Veresk.World.Settings.WorldSettings
+  useRandomSeedOnGenerate: 0
+  seed: 12345
+  terrainDimensions:
+    heightmapResolution: 513
+    alphamapResolution: 256
+    detailResolution: 256
+    terrainSizeX: 2048
+    terrainSizeZ: 2048
+    terrainHeight: 240
+    normalizedSeaLevel: 0.38
+  islandFalloffStrength: 1.1
+  islandCoreBias: 0.15
+  shorelineSharpness: 1
+  macroNoise:
+    baseScale: 500
+    octaves: 4
+    persistence: 0.5
+    lacunarity: 2
+    offset: {x: 0, y: 0}
+    amplitude: 1
+    useDomainWarp: 0
+    warpScale: 90
+    warpStrength: 20
+  mediumNoise:
+    baseScale: 180
+    octaves: 4
+    persistence: 0.5
+    lacunarity: 2
+    offset: {x: 0, y: 0}
+    amplitude: 0.45
+    useDomainWarp: 0
+    warpScale: 90
+    warpStrength: 20
+  detailNoise:
+    baseScale: 70
+    octaves: 3
+    persistence: 0.45
+    lacunarity: 2.2
+    offset: {x: 0, y: 0}
+    amplitude: 0.12
+    useDomainWarp: 0
+    warpScale: 90
+    warpStrength: 20
+  macroWeight: 0.65
+  mediumWeight: 0.25
+  detailWeight: 0.1
+  heightBias: 0
+  heightCurvePower: 1.35
+  playableFlattening: 0.18
+  coastalBandWidth: 0.08
+  coastSmoothingStrength: 0.5
+  slopeSofteningStrength: 0.45
+  biomeDefinitions:
+  - {fileID: 11400000, guid: 67d0d8f2c4812a642a13deaec2f76745, type: 2}
+  autoGenerateOnStart: 0
+  logGenerationSteps: 1
